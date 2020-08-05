@@ -1,0 +1,29 @@
+
+/* $green-color:#42C962;
+$blue-color: #000072;
+$lightBlue-color: #509bf5; */
+
+
+header{
+    background-color: #000000;
+    height: 50px;
+    text-align: center;
+}
+
+h1{
+    color: #42C962;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #000000;
+    color: #F8F8F8;
+    text-align: center;
+ }
+

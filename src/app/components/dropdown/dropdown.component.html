@@ -1,0 +1,4 @@
+
+<select class="select-css" name="selectedOption" [(ngModel)]="selectedOption" (ngModelChange)="onChane($event)">  
+    <option *ngFor="let option of options" [ngValue]="option">{{option.name}}</option>
+</select>
