@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
 
 @Component({
@@ -10,24 +10,14 @@ export class DropdownComponent{
   
   @Input() options: any;
   @Input() selectedOption: any;
+  @Output() selectedOptionEmit = new EventEmitter<object>();
 
   constructor(private _cookieService: CookieService){}
 
-  // ngOnInit() {
-  //   this._cookieService.put("test", "test");
-  //   console.log("Set Test Cookie as Test");
-  // }
-
-  // getCookie(key: string) {
-  //   return this._cookieService.get(key);
-  // }
-
   onChane(option: any): void{
     this.selectedOption = option;
-    console.log(option);
-    // this._cookieService.set("this.selectedOption", this.selectedOption); //save option cookie
-    // console.log(this.selectedOption);
-    
+    this.selectedOptionEmit.emit(option);
+    this._cookieService.set("selectedOption", this.selectedOption.id); //save option cookie
   }
 
 }

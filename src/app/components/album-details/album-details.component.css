@@ -6,21 +6,19 @@
 }
 
 .album-name{
-    color: #509bf5;
+    color: #fbd46d;
     font-weight: 800;
-    font-size: 40px;
+    font-size: 45px;
 }
 
 .album-release-date{
-    /* color: #0000;
-    font-weight: 800;
-    font-size: 15px; */
+    color: #222831;
     font-weight: 800;
 }
 
-/* Classes */
 .album-details-container{
-    margin-top: 50px;
+    background-color: #eeeeee;
+    margin-top: 20px;
     font-family: "Circular","Helvetica","Arial","sans-serif";
     text-align: center;
 

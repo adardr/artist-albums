@@ -2,21 +2,23 @@
 .albums-container{
 	text-align: center;
 	width: 100%;
+	background-color: #eeeeee;
 }
 
 .selectHeader{
-	color: #000000; 
+	color: #222831; 
 	cursor: pointer;	
     font-weight: 800;
-	font-size: 15px;
+	font-size: 20px;
 	margin-right: 12px;
 	text-align: center;
 	width: 160px;
 }
 
 .select-container{
-	margin-top: 15px;
+	background-color: #4f8a8b;
 	text-align: center;
+    padding: 35px 0;
 }
 
 .arrow-down {
@@ -25,15 +27,12 @@
 	border-left: 20px solid transparent;
 	border-right: 20px solid transparent;
 	border-top: 20px solid #FFF;
-
 	position: absolute;
-	top: 0px;
-	left: 50%;
+    top: 172px;
+    left: 49%;
 	margin-left: -25px;
 }
 
 .teal{
 	border-top: 20px solid #4f8a8b;
 }  
-
-/* //#bf8e0e //509bf5 */
