@@ -12,7 +12,7 @@ import { CookieService } from 'ngx-cookie-service';
 export class AlbumsComponent implements OnInit {
   selectedAlbum: any = {};
   albums = [];
-  accessToken='';
+  accessToken ='';
 
   constructor(private albumServics: AlbumService, private authService:AuthenticationService, 
               private _cookieService: CookieService) { }
@@ -28,11 +28,13 @@ export class AlbumsComponent implements OnInit {
         this.albums = items;
         
         //set drop down value to cookie or to the first item
-        console.log("get cookie");
-        var cookieSelection = this._cookieService.get("this.selectedOption")
-        console.log(cookieSelection);
-        console.log(cookieSelection[0]);
-        this.selectedAlbum = this._cookieService.get("this.selectedOption") ? cookieSelection : items[0];
+        // console.log("get cookie");
+        // var cookieSelection = this._cookieService.get("this.selectedOption")
+        // console.log(cookieSelection);
+        // console.log(cookieSelection[0]);
+        // this.selectedAlbum = this._cookieService.get("this.selectedOption") ? cookieSelection : items[0];
+        this.selectedAlbum = items[0];
+
       });
     });
   }

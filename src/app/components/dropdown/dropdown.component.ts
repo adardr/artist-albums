@@ -24,8 +24,9 @@ export class DropdownComponent{
 
   onChane(option: any): void{
     this.selectedOption = option;
-    this._cookieService.set("this.selectedOption", this.selectedOption); //save option cookie
-    console.log(this.selectedOption);
+    console.log(option);
+    // this._cookieService.set("this.selectedOption", this.selectedOption); //save option cookie
+    // console.log(this.selectedOption);
     
   }
 

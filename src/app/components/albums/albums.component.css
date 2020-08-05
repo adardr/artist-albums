@@ -1,14 +1,39 @@
 
-.select-container{
-    display: flex;
-	margin-top: 15px;
+.albums-container{
+	text-align: center;
+	width: 100%;
 }
 
 .selectHeader{
-    color: #000000;
-    font-weight: 700;
+	color: #000000; 
+	cursor: pointer;	
+    font-weight: 800;
 	font-size: 15px;
+	margin-right: 12px;
 	text-align: center;
-	cursor: pointer;
 	width: 160px;
 }
+
+.select-container{
+	margin-top: 15px;
+	text-align: center;
+}
+
+.arrow-down {
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #FFF;
+
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -25px;
+}
+
+.teal{
+	border-top: 20px solid #4f8a8b;
+}  
+
+/* //#bf8e0e //509bf5 */

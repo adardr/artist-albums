@@ -1,11 +1,12 @@
 
+<div class="arrow-down teal"></div>
 
-  <div class="albums-container">
-    <div class="select-container">
-        <label class="selectHeader">Pick an album:</label>
-        <app-dropdown [options]="albums" [selectedOption]="selectedAlbum"></app-dropdown>
-    </div>
-    <div *ngIf="selectedAlbum">
-        <app-album-details [album]="selectedAlbum"></app-album-details>
-    </div>
+<div class="albums-container">
+  <div class="select-container">
+      <label class="selectHeader">Pick an album:</label>
+      <app-dropdown [options]="albums" [selectedOption]="selectedAlbum"></app-dropdown>
   </div>
+  <div *ngIf="selectedAlbum">
+      <app-album-details [album]="selectedAlbum"></app-album-details>
+  </div>
+</div>

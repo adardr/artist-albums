@@ -1,20 +1,29 @@
 
-h1{
-    color: #509bf5;
-    font-weight: 800;
-    font-size: 50px;
+.details-div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
 }
 
-h2{
-    color: #0000;
+.album-name{
+    color: #509bf5;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 40px;
+}
+
+.album-release-date{
+    /* color: #0000;
+    font-weight: 800;
+    font-size: 15px; */
+    font-weight: 800;
 }
 
 /* Classes */
 .album-details-container{
-    margin-top: 70px;
+    margin-top: 50px;
     font-family: "Circular","Helvetica","Arial","sans-serif";
     text-align: center;
 
 }
+
+
