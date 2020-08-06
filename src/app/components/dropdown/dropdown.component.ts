@@ -6,18 +6,20 @@ import { CookieService } from 'ngx-cookie-service';
   templateUrl: './dropdown.component.html',
   styleUrls: ['./dropdown.component.css']
 })
-export class DropdownComponent{
-  
+export class DropdownComponent {
+
   @Input() options: any;
   @Input() selectedOption: any;
   @Output() selectedOptionEmit = new EventEmitter<object>();
 
-  constructor(private _cookieService: CookieService){}
+  constructor(private _cookieService: CookieService) { }
 
-  onChane(option: any): void{
+  onChane(option: any): void {
     this.selectedOption = option;
     this.selectedOptionEmit.emit(option);
-    this._cookieService.set("selectedOption", this.selectedOption.id); //save option cookie
+
+    //save selectedOption into cookie
+    this._cookieService.set("selectedOption", this.selectedOption.id); 
   }
 
 }

@@ -1,27 +1,25 @@
-
-.details-div{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-}
-
-.album-name{
-    color: #fbd46d;
-    font-weight: 800;
-    font-size: 45px;
-}
-
-.album-release-date{
-    color: #222831;
-    font-weight: 800;
-}
-
-.album-details-container{
+.album-details-container {
     background-color: #eeeeee;
     margin-top: 20px;
-    font-family: "Circular","Helvetica","Arial","sans-serif";
+    font-family: "Circular", "Helvetica", "Arial", "sans-serif";
     text-align: center;
+}
 
+.details-div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.album-name {
+  color: #fbd46d;
+  font-weight: 800;
+  font-size: 45px;
+}
+
+.album-release-date {
+  color: #222831;
+  font-weight: 800;
 }
 
 

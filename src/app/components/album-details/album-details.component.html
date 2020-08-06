@@ -1,9 +1,14 @@
 <div class="album-details-container">
-    <div class="details-div">
-        <label class="album-name">{{album.name}}</label>
-        <label class="album-release-date">{{album.release_date}}</label>
-    </div>
-    <div class="details-img">
-        <img src={{album.images[0].url}} alt="Album cover" width="500" height="500">
-    </div>
+  <div class="details-div">
+    <label class="album-name">{{ album.name }}</label>
+    <label class="album-release-date">{{ album.release_date }}</label>
+  </div>
+  <div class="details-img" *ngIf="album.images">
+    <img
+      src="{{ album.images[0].url }}"
+      alt="Album cover"
+      width="500"
+      height="500"
+    />
+  </div>
 </div>

@@ -5,22 +5,14 @@
 	background-color: #eeeeee;
 }
 
-.selectHeader{
-	color: #222831; 
-	cursor: pointer;	
-    font-weight: 800;
-	font-size: 20px;
-	margin-right: 12px;
-	text-align: center;
-	width: 160px;
-}
-
 .select-container{
 	background-color: #4f8a8b;
-	text-align: center;
-    padding: 35px 0;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 14px;
 }
 
+/* arrow down from the albums-container */
 .arrow-down {
 	width: 0;
 	height: 0;
@@ -28,7 +20,7 @@
 	border-right: 20px solid transparent;
 	border-top: 20px solid #FFF;
 	position: absolute;
-    top: 172px;
+	top: 144px;
     left: 49%;
 	margin-left: -25px;
 }
@@ -36,3 +28,7 @@
 .teal{
 	border-top: 20px solid #4f8a8b;
 }  
+
+.errorMsg{
+	color: #d93535;
+}
