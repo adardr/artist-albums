@@ -22,16 +22,7 @@ option:hover {
   box-shadow: 0 0 10px 100px #1882a8 inset;
 }
 
-select option:hover,
-select option:focus,
-select option:active {
-  background: linear-gradient(#222831, #222831);
-  background-color: #222831 !important;
-  color: #fbd46d !important;
-}
-
 select option:checked {
   background: linear-gradient(#4f8a8b, #4f8a8b);
   background-color: #4f8a8b !important;
-  color: #222831 !important;
 }
